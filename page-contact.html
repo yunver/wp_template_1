@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>韵味儿</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="container clearfix">
+				<div id="search">
+					<div id="search-form">
+						<form method="get" id="searchform" action="#">
+							<input type="text" value="搜索网站..." name="s" id="searchinput" />
+							<input type="image" src="images/search_btn.png" id="searchsubmit" />
+						</form>
+					</div>
+				</div>
+				<!--end #search-->
+			</div>
+			<!--end .container-->
+		</header>
+		<!--end #main-header-->
+
+		<div class="container">
+			<div id="logo-area">
+				<a href="#">
+					<img src="images/logo.png" alt="Yunver" id="logo"/>
+				</a>
+			</div>
+		</div>
+		<!--end .container-->
+
+		<div id="secondary-menu">
+			<div class="container">
+				<a href="#" class="mobile_nav closed">
+					菜单<span></span>
+					<ul id="category_mobile_menu" class="et_mobile_menu">
+						<li id="" class="menu-item">
+							<a href="index.html">
+								<span class="main_text">首页</span>
+							</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page.html"><span class="main_text">
+								文章<span> »</span></span>
+							</a>
+							<ul class="sub-menu" style="display:none; visibility:hidden;">
+								<li id="" class="menu-item">
+									<a href="page.html">工作</a>
+								</li>
+								<li id="" class="menu-item">
+									<a href="page.html">生活</a>
+								</li>
+							</ul>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page-full.html">
+								<span class="main_text">关于</span>
+							</a>
+						</li>
+						<li id="" class="menu-item current-menu-item">
+							<a href="page-contact.html">
+								<span class="main_text">联系我</span>
+							</a>
+						</li>
+					</ul>
+				</a>
+				<nav id="second-menu" class="clearfix">
+					<ul id="menu-categories" class="nav">
+						<li id="" class="menu-item">
+							<a href="index.html">首页</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page.html">文章</a>
+							<ul class="sub-menu">
+								<li id="" class="menu-item">
+									<a href="page.html">工作</a>
+								</li>
+								<li id="" class="menu-item">
+									<a href="page.html">生活</a>
+								</li>
+							</ul>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page-full.html">关于</a>
+						</li>
+						<li id="" class="menu-item current-menu-item">
+							<a href="page-contact.html">联系我</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!--end #secondary-menu-->
+
+		<div id="main-area">
+			<div class="container">
+				<div id="content-area" class="clearfix">
+					<div id="left-area">
+						<div id="breadcrumbs" class="clearfix">
+							<a href="index.html" class="breadcrumbs_home">首页</a>
+							<span class="raquo">&raquo;</span>
+							联系我
+						</div>
+						<!--end #breadcrumbs-->
+						<article id="" class="entry clearfix">
+							<div class="post_content clearfix">
+								<h1 class="title">联系我</h1>
+								<div id="et-contact" class="responsive">
+									<div id="et-contact-message"> </div>
+
+									<form action="" method="post" id="et_contact_form">
+										<div id="et_contact_left">
+											<p class="clearfix">
+												<label for="et_contact_name" class="et_contact_form_label">姓名</label>
+												<input type="text" name="et_contact_name" value="姓名" id="et_contact_name" class="input" />
+											</p>
+
+											<p class="clearfix">
+												<label for="et_contact_email" class="et_contact_form_label">电子邮箱</label>
+												<input type="text" name="et_contact_email" value="电子邮箱" id="et_contact_email" class="input" />
+											</p>
+
+											<p class="clearfix">
+												<label for="et_contact_subject" class="et_contact_form_label">主题</label>
+												<input type="text" name="et_contact_subject" value="主题" id="et_contact_subject" class="input" />
+											</p>
+										</div>
+										<!--end #et_contact_left-->
+
+										<div id="et_contact_right">
+											<p class="clearfix">
+												验证: <br/>4 + 11 =
+												<input type="text" name="et_contact_captcha" value="" id="et_contact_captcha" class="input" size="2" />
+											</p>
+										</div>
+										<!--end #et_contact_right -->
+
+										<div class="clear"></div>
+
+										<p class="clearfix">
+											<label for="et_contact_message" class="et_contact_form_label">信息</label>
+											<textarea class="input" id="et_contact_message" name="et_contact_message">信息</textarea>
+										</p>
+
+										<input type="hidden" name="et_contactform_submit" value="et_contact_proccess" />
+
+										<input type="reset" id="et_contact_reset" value="重置" />
+										<input class="et_contact_submit" type="submit" value="提交" id="et_contact_submit" />
+
+										<input type="hidden" id="_wpnonce-et-contact-form-submitted" name="_wpnonce-et-contact-form-submitted" value="16be94302d" />
+										<input type="hidden" name="_wp_http_referer" value="/preview/Lucid/contact-us/" />
+									</form>
+								</div>
+								<!--end #et-contact-->
+							</div>
+							<!--end .post_content-->
+						</article>
+						<!--end .entry-->
+					</div>
+					<!--end #left-area-->
+
+					<div id="sidebar">
+						<div id="" class="widget">
+							<ul id="tab-controls" class="clearfix">
+								<li class="first active"><a href="javascript:"><span>流行</span></a></li>
+								<li class="second"><a href="javascript:"><span>最近</span></a></li>
+								<li class="last"><a href="javascript:"><span>随机</span></a></li>
+							</ul>
+
+							<div id="all-tabs">
+								<div id="popular-tab">
+									<ul>
+										<li class="clearfix">
+											<span class="post-meta">五月<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">Ut sagitti&#8217;s ultrices</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Thu<span>17</span></span>
+											<h4>
+												<a href="page-blog.html">Urna eget erat non purus</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Thu<span>04</span></span>
+											<h4>
+												<a href="page-blog.html">Neque quisquam</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Tue<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">Nam libero tempore</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Tue<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">Magna suspendisse eleifend at nulla</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<!--end #popular-tab-->
+
+								<div id="recent-tab">
+									<ul>
+										<li class="clearfix">
+											<span class="post-meta">Fri<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">1</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Thu<span>17</span></span>
+											<h4>
+												<a href="page-blog.html">2</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Thu<span>04</span></span>
+											<h4>
+												<a href="page-blog.html">3</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Tue<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">4</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Tue<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">5</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<!--end #recent-tab-->
+
+								<div id="random-tab">
+									<ul>
+										<li class="clearfix">
+											<span class="post-meta">Fri<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">5</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Thu<span>17</span></span>
+											<h4>
+												<a href="page-blog.html">4</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Thu<span>04</span></span>
+											<h4>
+												<a href="page-blog.html">3</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Tue<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">2</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">Tue<span>05</span></span>
+											<h4>
+												<a href="page-blog.html">1</a>
+											</h4>
+											<p class="meta-info">
+												Posted by <a href="page.html" title="" rel="author">admin</a> in <a href="page.html" title="" rel="category tag">Blog</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<!--end #popular-tab-->
+							</div>
+							<!--end #all-tabs-->
+						</div>
+						<!--end .widget-->
+
+						<div id="" class="widget">
+							<h4 class="widgettitle">最近的文章</h4>
+							<ul>
+								<li>
+									<a href="page-blog.html">Sed auctor tristique venenatis</a>
+								</li>
+								<li>
+									<a href="page-blog.html">Donec sagittis auctor</a>
+								</li>
+								<li>
+									<a href="page-blog.html">Sed laoreet fringilla</a>
+								</li>
+								<li>
+									<a href="page-blog.html">Ut dictum euismod</a>
+								</li>
+								<li>
+									<a href="page-blog.html">Duis venenatis scelerisque</a>
+								</li>
+							</ul>
+						</div>
+						<!--end .widget-->
+						<div id="" class="widget">
+							<h4 class="widgettitle">归档</h4>
+							<ul>
+								<li>
+									<a href="page.html">2012年8月</a>
+								</li>
+								<li>
+									<a href="page.html">2011年5月</a>
+								</li>
+								<li>
+									<a href="page.html">2010年9月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年9月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年8月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年7月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年1月</a>
+								</li>
+								<li>
+									<a href="page.html">2006年9月</a>
+								</li>
+							</ul>
+						</div>
+						<!--end .widget-->
+					</div>
+					<!--end #sidebar-->
+				</div>
+				<!--end #content-area-->
+			</div>
+			<!--end .container-->
+		</div>
+		<!--end #main-area-->
+
+		<footer id="main-footer">
+			<div id="footer-divider"></div>
+			<div class="container">
+				<div id="footer-widgets" class="clearfix">
+					<div class="footer-widget">
+						<div class="f_widget">
+							<h4 class="widgettitle">友情链接</h4>
+							<ul>
+								<li>
+									<a href="http://www.finntack.com/" title="" target="_blank">Finntack</a>
+								</li>
+								<li>
+									<a href="http://www.horze.com/" title="" target="_blank">Horze</a>
+								</li>
+								<li>
+									<a href="http://www.finnfarrier.com/" title="" target="_blank">Finnfarrier</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end .footer-widget-->
+					<div class="footer-widget">
+						<div class="f_widget">
+							<h4 class="widgettitle">我的收藏</h4>
+							<ul>
+								<li>
+									<a href="http://cdc.tencent.com/" title="" target="_blank">腾讯CDC</a>
+								</li>
+								<li>
+									<a href="http://ued.taobao.org/blog/" title="" target="_blank">淘宝UED</a>
+								</li>
+								<li>
+									<a href="http://ued.sina.com/" title="" target="_blank">新浪UED</a>
+								</li>
+								<li>
+									<a href="http://uedc.163.com/" title="" target="_blank">网易UEDC</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end .footer-widget-->
+					<div class="footer-widget last">
+						<div class="f_widget">
+							<h4 class="widgettitle">其他</h4>
+							<ul>
+								<li>
+									<a href="#">登录</a>
+								</li>
+								<li>
+									<a href="#" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a>
+								</li>
+								<li>
+									<a href="#" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a>
+								</li>
+								<li>
+									<a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end .footer-widget-->
+				</div>
+				<!--end #footer-widgets-->
+			</div>
+			<!--end .container-->
+		</footer>
+		<!--end #main-footer-->
+
+		<div id="footer-bottom">
+			<div class="container clearfix">
+				<ul id="bottom-menu">
+					<li>
+						<a href="page-full.html">关于</a>
+					</li>
+					<li>
+						<a href="page-contact.html">联系我</a>
+					</li>
+				</ul>
+				<p id="copyright">
+					Designed by <a href="http://www.elegantthemes.com" target="_black">Elegant Themes</a><br />
+					Produced by <a href="http://www.yunver.com" target="_black">大发</a><br />
+					Powered by <a href="http://www.wordpress.org" target="_black">WordPress</a><br />
+					湘ICP备 13001861号
+				</p>
+			</div>
+			<!--end .container-->
+		</div>
+		<!--end #footer-bottom-->
+
+		<script type="text/javascript" src="js/superfish.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+</html>

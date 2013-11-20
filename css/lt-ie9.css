@@ -1,0 +1,15 @@
+/*
+Theme Name: Complex
+Theme URI: http://www.yunver.com
+Version: 1.0
+Description: IE9以下兼容
+Author: 大发
+Author URI: http://www.yunver.com
+*/
+
+/* ====================
+	Main layout info
+==================== */
+/*----- Blog -----*/
+.blog-item{padding:44px 45px 41px 78px; width:196px;}
+.blog-item span.post-meta{left:0; top:0;}

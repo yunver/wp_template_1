@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>韵味儿</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="container clearfix">
+				<div id="search">
+					<div id="search-form">
+						<form method="get" id="searchform" action="#">
+							<input type="text" value="搜索网站..." name="s" id="searchinput" />
+							<input type="image" src="images/search_btn.png" id="searchsubmit" />
+						</form>
+					</div>
+				</div>
+				<!--end #search-->
+			</div>
+			<!--end .container-->
+		</header>
+		<!--end #main-header-->
+
+		<div class="container">
+			<div id="logo-area">
+				<a href="#">
+					<img src="images/logo.png" alt="Yunver" id="logo"/>
+				</a>
+			</div>
+		</div>
+		<!--end .container-->
+
+		<div id="secondary-menu">
+			<div class="container">
+				<a href="#" class="mobile_nav closed">
+					菜单<span></span>
+					<ul id="category_mobile_menu" class="et_mobile_menu">
+						<li id="" class="menu-item current-menu-item">
+							<a href="index.html">
+								<span class="main_text">首页</span>
+							</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page.html"><span class="main_text">
+								文章<span> »</span></span>
+							</a>
+							<ul class="sub-menu" style="display:none; visibility:hidden;">
+								<li id="" class="menu-item">
+									<a href="page.html">工作</a>
+								</li>
+								<li id="" class="menu-item">
+									<a href="page.html">生活</a>
+								</li>
+								<li id="" class="menu-item">
+									<a href="page.html">游记</a>
+								</li>
+							</ul>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page.html">
+								<span class="main_text">画廊</span>
+							</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page-full.html">
+								<span class="main_text">关于</span>
+							</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page-contact.html">
+								<span class="main_text">联系我</span>
+							</a>
+						</li>
+					</ul>
+				</a>
+				<nav id="second-menu" class="clearfix">
+					<ul id="menu-categories" class="nav">
+						<li id="" class="menu-item current-menu-item">
+							<a href="index.html">首页</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page.html">文章</a>
+							<ul class="sub-menu">
+								<li id="" class="menu-item">
+									<a href="page.html">工作</a>
+								</li>
+								<li id="" class="menu-item">
+									<a href="page.html">生活</a>
+								</li>
+								<li id="" class="menu-item">
+									<a href="page.html">游记</a>
+								</li>
+							</ul>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page.html">图片</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page-full.html">关于</a>
+						</li>
+						<li id="" class="menu-item">
+							<a href="page-contact.html">联系我</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!--end #secondary-menu-->
+
+		<div id="main-area">
+			<div class="container">
+				<div id="featured_section">
+					<div id="featured" class="flexslider">
+						<ul class="slides">
+							<li class="slide">
+								<a href="#">
+									<img src="images/demoimg/s_1.jpg" alt="" width="960" height="360" />
+									<span class="overlay"></span>
+								</a>
+							</li>
+							<!-- end .slide -->
+							<li class="slide">
+								<a href="#">
+									<img src="images/demoimg/s_3.jpg" alt="" width="960" height="360" />
+									<span class="overlay"></span>
+								</a>
+							</li>
+							<!-- end .slide -->
+							<li class="slide">
+								<a href="#">
+									<img src="images/demoimg/s_2.jpg" alt="" width="960" height="360" />
+									<span class="overlay"></span>
+								</a>
+							</li>
+							<!-- end .slide -->
+						</ul>
+					</div>
+					<!-- end #featured -->
+					<div id="switcher-container">
+						<ul id="switcher" class="clearfix">
+							<li class="active-slide">
+								<div class="switcher-content">
+									<span class="post-meta">一月<span>05</span></span>
+									<h2>我的背包</h2>
+									<p class="meta-info">发表于文章</p>
+								</div>
+								<!--end .switcher-content-->
+							</li>
+							<li>
+								<div class="switcher-content">
+									<span class="post-meta">二月<span>04</span></span>
+									<h2>亲爱的，再等等</h2>
+									<p class="meta-info">发表于文章</p>
+								</div>
+								<!--end .switcher-content-->
+							</li>
+							<li class="last">
+								<div class="switcher-content">
+									<span class="post-meta">三月<span>05</span></span>
+									<h2>给迓舒的一封信</h2>
+									<p class="meta-info">发表于文章</p>
+								</div>
+								<!--end .switcher-content-->
+							</li>
+						</ul>
+					</div>
+					<!--end #switcher-container-->
+				</div>
+				<!--end #featured_section-->
+
+				<div id="recent-categories" class="clearfix">
+					<div class="recent-category">
+						<div class="recent-category_widget">
+							<h3 class="main-title">生活</h3>
+							<a href="page.html" class="more">更多</a>
+							<div class="clear"></div>
+							<ul class="category-box">
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/2-120627_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">我的背包</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+									</p>
+								</li>
+								<li class="clearfix recent_even">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/3-135379_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">亲爱的并肩作战吧，永不缴械</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+									</p>
+								</li>
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/s-1-624464_37x37.png" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">我人笨，别骗我</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+									</p>
+								</li>
+								<li class="clearfix recent_even">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/s-3-630122_37x37.png" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">五楼的月亮</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+									</p>
+								</li>
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/6-82087_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">人老多忘事，唯不忘相思</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+									</p>
+								</li>
+							</ul>
+							<!--end .category-box-->
+						</div>
+						<!--end .recent-category_widget-->
+					</div>
+					<!--end .recent-category-->
+
+					<div class="recent-category">
+						<div class="recent-category_widget">
+							<h3 class="main-title">工作</h3>
+							<a href="page.html" class="more">更多</a>
+							<div class="clear"></div>
+							<ul class="category-box">
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_12774694-123553_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">浅谈当下网页设计趋势</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+									</p>
+								</li>
+								<li class="clearfix recent_even">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_58264459-111274_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">用户体验设计遇见色彩情感</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+									</p>
+								</li>
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_56785618-132726_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">情感维系 娱乐至上</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+									</p>
+								</li>
+								<li class="clearfix recent_even">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_56753605-363842_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">手机游戏设计初体验</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+									</p>
+								</li>
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_56391895-141794_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">Canvas核心技术</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+									</p>
+								</li>
+							</ul>
+							<!--end .category-box-->
+						</div>
+						<!--end .recent-category_widget-->
+					</div>
+					<!--end .recent-category-->
+
+					<div class="recent-category last">
+						<div class="recent-category_widget">
+							<h3 class="main-title">游记</h3>
+							<a href="page.html" class="more">更多</a>
+							<div class="clear"></div>
+							<ul class="category-box">
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_56819374-78911_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">绿阶梯</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+									</p>
+								</li>
+								<li class="clearfix recent_even">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_560779571-136429_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">亲爱的并肩作战吧，永不缴械</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+									</p>
+								</li>
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_55323319-109433_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">我人笨，别骗我</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+									</p>
+								</li>
+								<li class="clearfix recent_even">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_54700000-82308_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">五楼的月亮</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+									</p>
+								</li>
+								<li class="clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/shutterstock_53088394-78524_37x37.jpg" alt="" width="37" height="37" />
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h3>
+										<a href="page-blog.html">人老多忘事，唯不忘相思</a>
+									</h3>
+									<p class="meta-info">
+										由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+									</p>
+								</li>
+							</ul>
+							<!--end .category-box-->
+						</div>
+						<!--end .recent-category_widget-->
+					</div>
+					<!--end .recent-category-->
+				</div>
+				<!--end #recent-categories-->
+
+				<div id="quote">
+					<h2>知多少</h2>
+					<p>等的人，等待中花落知多少。经得起，岁月动摇。</p>
+				</div>
+				<!--end #quote-->
+
+				<div id="content-area" class="clearfix">
+					<div id="left-area">
+						<div id="recent-images">
+							<h3 class="main-title">最近的图片</h3>
+							<a href="#" class="more">更多</a>
+							<div class="clear"></div>
+							<div id="image-slider-section">
+								<div id="image-content" class="flexslider">
+									<ul class="slides" id="image-content-ul">
+										<li>
+											<a href="#">
+												<img src="images/demoimg/gallery8.png" alt="" />
+												<span class="overlay"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/demoimg/gallery6.png" alt="" />
+												<span class="overlay"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/demoimg/gallery3.png" alt="" />
+												<span class="overlay"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="images/demoimg/gallery4.png" alt="" />
+												<span class="overlay"></span>
+											</a>
+										</li>
+									</ul>
+									<!--end .slides-->
+									<ul id="image-switcher" class="clearfix">
+										<li class="active_image">
+											<div class="image_image">
+												<img src="images/demoimg/gallery8.png" alt="" />
+												<span class="image_view"></span>
+											</div>
+										</li>
+										<li>
+											<div class="image_image">
+												<img src="images/demoimg/gallery6.png" alt="" />
+												<span class="image_view"></span>
+											</div>
+										</li>
+										<li>
+											<div class="image_image">
+												<img src="images/demoimg/gallery3.png" alt="" />
+												<span class="image_view"></span>
+											</div>
+										</li>
+										<li>
+											<div class="image_image">
+												<img src="images/demoimg/gallery4.png" alt="" />
+												<span class="image_view"></span>
+											</div>
+										</li>
+									</ul>
+									<!--end #image-switcher-->
+								</div>
+								<!--end #image-content-->
+							</div>
+							<!--end #image-slider-section-->
+						</div>
+						<!--end #recent-images-->
+
+						<div id="recent-articles">
+							<h3 class="main-title">最近的文章</h3>
+							<div class="clear"></div>
+							<div id="articles-content">
+								<article id="" class="article clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/2-120627_128x128.jpg" alt="" width="" height="" />
+											<span class="overlay"></span>
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h4>
+										<a href="page-blog.html">青春，我们逃无可逃</a>
+									</h4>
+									<p class="meta-info">
+										2013年03月12日，由<a href="page.html" title="Posts by admin" rel="author">大发</a> 发表于 <a href="page.html" title="View all posts in Nature" rel="category tag">生活</a> | <span class="comments-number"><a href="page-blog.html/#respond">1 条评论</a></span>
+									</p>
+									<p>
+										每一代人的青春都有各自的印记。康慨年纪尚轻，笔力不轻，电光石火间，尽现80后一代的理想与迷茫...
+									</p>
+								</article>
+								<!--end .article-->
+								<article id="" class="article clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/3-135379_128x128.jpg" alt="" width="" height="" />
+											<span class="overlay"></span>
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h4>
+										<a href="page-blog.html">原谅我一生不羁放纵爱自由</a>
+									</h4>
+									<p class="meta-info">
+										2013年03月12日，由<a href="page.html" title="Posts by admin" rel="author">大发</a> 发表于 <a href="page.html" title="View all posts in Nature" rel="category tag">生活</a> | <span class="comments-number"><a href="page-blog.html/#respond">1 条评论</a></span>
+									</p>
+									<p>
+										那些曾经伴无数人走过青葱岁月的香港音乐如今依然是流行音乐的“焦点”，藏着并不等于被遗忘，那些响亮的金曲...
+									</p>
+								</article>
+								<!--end .article-->
+								<article id="" class="article clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/s-1-624464_128x128.png" alt='Make A Wish' width='128' height='128' />
+											<span class="overlay"></span>
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h4>
+										<a href="page-blog.html">从你的全世界路过</a>
+									</h4>
+									<p class="meta-info">
+										2013年03月12日，由<a href="page.html" title="Posts by admin" rel="author">大发</a> 发表于 <a href="page.html" title="View all posts in Nature" rel="category tag">生活</a> | <span class="comments-number"><a href="page-blog.html/#respond">1 条评论</a></span>
+									</p>
+									<p>
+										十八九岁的时候，每次过生日都过得各种张扬。似乎有着用不完的力气，和完全不需要睡眠的精神。然后经历大笑和眼泪...
+									</p>
+								</article>
+								<!--end .article-->
+								<article id="" class="article last clearfix">
+									<div class="thumb">
+										<a href="page-blog.html">
+											<img src="images/demoimg/s-3-630122_128x128.png" alt='Make A Wish' width='128' height='128' />
+											<span class="overlay"></span>
+										</a>
+									</div>
+									<!--end .thumb-->
+									<h4>
+										<a href="page-blog.html">不为遇见，只为远方</a>
+									</h4>
+									<p class="meta-info">
+										2013年03月12日，由<a href="page.html" title="Posts by admin" rel="author">大发</a> 发表于 <a href="page.html" title="View all posts in Nature" rel="category tag">生活</a> | <span class="comments-number"><a href="page-blog.html/#respond">1 条评论</a></span>
+									</p>
+									<p>
+										出发之前，我们总是企图事事绚烂、如己所愿，半路却免不了坎坷与麻烦。你也许会失望、会迷茫。只因带着满腹希冀...
+									</p>
+								</article>
+								<!--end .article-->
+							</div>
+							<!--end #articles-content-->
+						</div>
+						<!--end #recent-articles-->
+						<div class="wp-pagenavi">
+							<span class="pages">第 1 页，共 4 页</span>
+							<span class="current">1</span>
+							<a href="#" class="page larger">2</a>
+							<a href="#" class="page larger">3</a>
+							<a href="#" class="page larger">4</a>
+							<a href="#" class="nextpostslink">&raquo;</a>
+						</div>
+						<!--end .wp-pagenavi-->
+					</div>
+					<!--end #left-area-->
+
+					<div id="sidebar">
+						<div id="" class="widget">
+							<ul id="tab-controls" class="clearfix">
+								<li class="first active"><a href="javascript:"><span>流行</span></a></li>
+								<li class="second"><a href="javascript:"><span>最近</span></a></li>
+								<li class="last"><a href="javascript:"><span>随机</span></a></li>
+							</ul>
+
+							<div id="all-tabs">
+								<div id="popular-tab">
+									<ul>
+										<li class="clearfix">
+											<span class="post-meta">五月</span>
+											<h4>
+												<a href="page-blog.html">路途遥远，我们在一起吧</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">七月</span>
+											<h4>
+												<a href="page-blog.html">不省心</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">十一月</span>
+											<h4>
+												<a href="page-blog.html">站在两个世界的边缘</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">三月</span>
+											<h4>
+												<a href="page-blog.html">愿风裁尘</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">九月</span>
+											<h4>
+												<a href="page-blog.html">公开的秘密</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<!--end #popular-tab-->
+
+								<div id="recent-tab">
+									<ul>
+										<li class="clearfix">
+											<span class="post-meta">十二月</span>
+											<h4>
+												<a href="page-blog.html">身边的江湖</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">十月</span>
+											<h4>
+												<a href="page-blog.html">他们最幸福</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">九月</span>
+											<h4>
+												<a href="page-blog.html">花街往事</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">七月</span>
+											<h4>
+												<a href="page-blog.html">掷地有声</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">二月</span>
+											<h4>
+												<a href="page-blog.html">追风筝的人</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<!--end #recent-tab-->
+
+								<div id="random-tab">
+									<ul>
+										<li class="clearfix">
+											<span class="post-meta">三月</span>
+											<h4>
+												<a href="page-blog.html">平凡的世界</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">六月</span>
+											<h4>
+												<a href="page-blog.html">人生的枷锁</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">五月</span>
+											<h4>
+												<a href="page-blog.html">你好，旧时光</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看工作中的所有文章" rel="category tag">工作</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">九月</span>
+											<h4>
+												<a href="page-blog.html">匆匆那年</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看游记中的所有文章" rel="category tag">游记</a>
+											</p>
+										</li>
+										<li class="clearfix">
+											<span class="post-meta">一月</span>
+											<h4>
+												<a href="page-blog.html">不能承受的生命之轻</a>
+											</h4>
+											<p class="meta-info">
+												由 <a href="page.html" title="查看大发发布的文章" rel="author">大发</a> 发表于 <a href="page.html" title="查看生活中的所有文章" rel="category tag">生活</a>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<!--end #popular-tab-->
+							</div>
+							<!--end #all-tabs-->
+						</div>
+						<!--end .widget-->
+
+						<div id="" class="widget">
+							<h4 class="widgettitle">最近的评论</h4>
+							<ul>
+								<li>
+									<a href="page-blog.html">不能承受的生命之轻</a>
+								</li>
+								<li>
+									<a href="page-blog.html">知多少</a>
+								</li>
+								<li>
+									<a href="page-blog.html">从你的全世界路过</a>
+								</li>
+								<li>
+									<a href="page-blog.html">不为遇见，只为远方</a>
+								</li>
+								<li>
+									<a href="page-blog.html">花街往事</a>
+								</li>
+							</ul>
+						</div>
+						<!--end .widget-->
+
+						<div id="" class="widget">
+							<h4 class="widgettitle">归档</h4>
+							<ul>
+								<li>
+									<a href="page.html">2012年8月</a>
+								</li>
+								<li>
+									<a href="page.html">2011年5月</a>
+								</li>
+								<li>
+									<a href="page.html">2010年9月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年9月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年8月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年7月</a>
+								</li>
+								<li>
+									<a href="page.html">2008年1月</a>
+								</li>
+								<li>
+									<a href="page.html">2006年9月</a>
+								</li>
+							</ul>
+						</div>
+						<!--end .widget-->
+					</div>
+					<!--end #sidebar-->
+				</div>
+				<!--end #content-area-->
+			</div>
+			<!--end .container-->
+		</div>
+		<!--end #main-area-->
+
+		<footer id="main-footer">
+			<div id="footer-divider"></div>
+			<div class="container">
+				<div id="footer-widgets" class="clearfix">
+					<div class="footer-widget">
+						<div class="f_widget">
+							<h4 class="widgettitle">友情链接</h4>
+							<ul>
+								<li>
+									<a href="http://www.finntack.com/" title="" target="_blank">Finntack</a>
+								</li>
+								<li>
+									<a href="http://www.horze.com/" title="" target="_blank">Horze</a>
+								</li>
+								<li>
+									<a href="http://www.finnfarrier.com/" title="" target="_blank">Finnfarrier</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end .footer-widget-->
+					<div class="footer-widget">
+						<div class="f_widget">
+							<h4 class="widgettitle">我的收藏</h4>
+							<ul>
+								<li>
+									<a href="http://cdc.tencent.com/" title="" target="_blank">腾讯CDC</a>
+								</li>
+								<li>
+									<a href="http://ued.taobao.org/blog/" title="" target="_blank">淘宝UED</a>
+								</li>
+								<li>
+									<a href="http://ued.sina.com/" title="" target="_blank">新浪UED</a>
+								</li>
+								<li>
+									<a href="http://uedc.163.com/" title="" target="_blank">网易UEDC</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end .footer-widget-->
+					<div class="footer-widget last">
+						<div class="f_widget">
+							<h4 class="widgettitle">其他</h4>
+							<ul>
+								<li>
+									<a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end .footer-widget-->
+				</div>
+				<!--end #footer-widgets-->
+			</div>
+			<!--end .container-->
+		</footer>
+		<!--end #main-footer-->
+
+		<div id="footer-bottom">
+			<div class="container clearfix">
+				<ul id="bottom-menu">
+					<li>
+						<a href="page-full.html">关于</a>
+					</li>
+					<li>
+						<a href="page-contact.html">联系我</a>
+					</li>
+				</ul>
+				<p id="copyright">
+					Designed by <a href="http://www.elegantthemes.com" target="_black">Elegant Themes</a><br />
+					Produced by <a href="http://www.yunver.com" target="_black">大发</a><br />
+					Powered by <a href="http://www.wordpress.org" target="_black">WordPress</a><br />
+					湘ICP备 13001861号
+				</p>
+			</div>
+			<!--end .container-->
+		</div>
+		<!--end #footer-bottom-->
+
+		<script type="text/javascript" src="js/superfish.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+</html>
