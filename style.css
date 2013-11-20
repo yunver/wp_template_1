@@ -421,7 +421,7 @@ article.post p, .comment-content p, article.page p { padding-bottom: 17px; }
 .widget li a{padding:20px 40px; text-decoration:none; color:#4C4C4C; display:block;}
 .widget li:hover{background-color:#F9F9F9; -moz-box-shadow:inset 1px 1px 0 #FFFFFF; -webkit-box-shadow:inset 1px 1px 0 #FFFFFF; box-shadow:inset 1px 1px 0 #FFFFFF;}
 .widget li:hover a{color:#4C4C4C;}
-/*body.home #sidebar{padding-top:33px;}*/
+body.home #sidebar{padding-top:33px;}
 
 /* ----------------------------------------
 	Footer
